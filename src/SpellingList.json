@@ -1,12 +1,30 @@
 {
-  "Lists": [
+  "Grades": [
     {
-      "Name": "3rd Grade Spelling List 1",
-      "Words": ["responsibility", "test", "boring", "eat"]
+      "Grade": "1st Grade",
+      "Lists": [
+        {
+          "Name": "1st Grade Spelling List 1",
+          "Words": ["responsibility", "test", "boring", "eat"]
+        },
+        {
+          "Name": "1st Grade Spelling List 2",
+          "Words": ["once", "this", "works", "quit"]
+        }
+      ]
     },
     {
-        "Name": "3rd Grade Spelling List 2",
-        "Words": ["once", "this", "works", "quit"]
-      }
+      "Grade": "3rd Grade",
+      "Lists": [
+        {
+          "Name": "3rd Grade Spelling List 1",
+          "Words": ["responsibility", "test", "boring", "eat"]
+        },
+        {
+          "Name": "3rd Grade Spelling List 2",
+          "Words": ["once", "this", "works", "quit"]
+        }
+      ]
+    }
   ]
 }
