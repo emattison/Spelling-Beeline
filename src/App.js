@@ -1,20 +1,21 @@
-import './App.css';
-import Word from './Word.js';
-import SpellingWords from './SpellingList.json'
+import "./App.css";
+import Word from "./Word.js";
+import SpellingWords from "./SpellingList.json";
 
 function App() {
   const createSpellingWords = (words) => {
-    return words.map(w => <Word key={w} >{w}</Word>);
+    return words.map((w) => <Word key={w}>{w}</Word>);
   };
 
   const createSpellingLists = (lists) => {
-    return lists.map(l => <h2>{l.Name}</h2>);
+    return lists.map((l, i) => <option key={"option" + i}>{l.Name}</option>);
   };
 
   return (
     <div className="App">
-      {createSpellingLists(SpellingWords.Lists)}
-      {createSpellingWords(SpellingWords.Lists[0].Words)}
+      <select className="form-select w-25" aria-label="Default select example">
+        {createSpellingLists(SpellingWords.Lists)}
+      </select>
     </div>
   );
 }
