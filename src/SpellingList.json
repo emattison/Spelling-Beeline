@@ -1,0 +1,12 @@
+{
+  "Lists": [
+    {
+      "Name": "3rd Grade Spelling List 1",
+      "Words": ["responsibility", "test", "boring", "eat"]
+    },
+    {
+        "Name": "3rd Grade Spelling List 2",
+        "Words": ["once", "this", "works", "quit"]
+      }
+  ]
+}
