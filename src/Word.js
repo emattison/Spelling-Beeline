@@ -1,6 +1,6 @@
 import Letter from './Letter.js'
 
-export default function Word({children}) {
+export default function Word({children, isActive}) {
     const word = children;
 
     const createWord = (word) => {
@@ -8,7 +8,7 @@ export default function Word({children}) {
     };
     
     return (
-        <div key={word} className="wordClass">
+        <div key={word} className={"carousel-item " + (isActive ? 'active': '')}>
             {createWord(word)}
         </div>
     )
