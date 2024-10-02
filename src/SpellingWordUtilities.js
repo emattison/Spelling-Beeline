@@ -14,3 +14,18 @@ export function readJsonSpellingWordGrades() {
 
   return grades;
 }
+
+export function readJsonSpellingWordLists(gradeName) {
+  const listProperties = Object.getOwnPropertyNames(SpellingWords.Grades[gradeName].Lists);
+  const lists = [];
+
+  for (let index = 0; index < listProperties.length; index++) {
+    const list = listProperties[index];
+    lists[index] = {
+      List: list,
+      ListName: SpellingWords.Grades[gradeName].Lists[list].Name
+    };
+  }
+
+  return lists;
+}

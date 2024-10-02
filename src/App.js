@@ -3,6 +3,7 @@ import Grade from "./Grade.js";
 import { Route, Routes } from "react-router-dom";
 import List from "./List.js";
 import Home from "./Home.js";
+import Assessment from "./Assessment.js"
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/grade" element={<Grade />} />
-        <Route path="/grade:gradeName/list" element={<List />} />
-        <Route path="/grade/:gradeName/list/:listName" element={<List />} />
+        <Route path="/grade/:gradeName/list" element={<List />} />
+        <Route path="/grade/:gradeName/list/:listName" element={<Assessment />} />
       </Routes>
     </div>
   );

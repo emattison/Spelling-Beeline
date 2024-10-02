@@ -18,14 +18,14 @@ function Grade() {
   };
 
   const onGradeSelected = (e) => {
-    window.location = "/Grade/" + e.target.attributes["data"].value;
+    window.location = "/Grade/" + e.target.attributes["data"].value + "/List";
     console.log("Test");
   };
 
   return (
     <>
       <div className="container">
-        <div className="fs-1">Choose a Grade</div>
+        <div className="fs-1">Choose a Grade:</div>
         {createGradeList(readJsonSpellingWordGrades())}
       </div>
     </>
